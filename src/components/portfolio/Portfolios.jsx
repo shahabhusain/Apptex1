@@ -11,7 +11,7 @@ import img15logo from "../../assets/develop.png";
 import img16 from "../../assets/proj3.png";
 import img16logo from "../../assets/movla.png";
 import img17 from "../../assets/proj6.png";
-import img17logo from "../../assets/Askmid.png";
+import img17logo from "../../assets/askmid.png";
 import img18 from "../../assets/proj4.png";
 import img18logo from "../../assets/winner.png";
 import img19 from "../../assets/proj8.png";
