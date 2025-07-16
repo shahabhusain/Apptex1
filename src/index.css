@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+body{
+  background-color: black;
+}
+
+.bg-gradian{
+    background-image: url(../src/assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg1{
+    background-image: url(../src/assets/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg2{
+    background-image: url(../src/assets/bg3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.back12{
+    background-image: url(./CasStydies/Skiwit/Assets/skiwit.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  
+  .bak{
+    border-radius: 23.81px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  
+  
+  .back123{
+    background-image:  url(../src/CasStydies/LocalCaregiver/Assets/Frame\ 1000009928.png);
+    background-position: center;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .bk{
+    border-radius: 23.81px;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .bk1{
+    border-radius: 16.782px;
+    background: rgba(255, 255, 255, 0.20);
+  }
+  
+  .balo{
+    background: linear-gradient(109deg, rgba(255, 255, 255, 0.60) -14.82%, rgba(0, 129, 255, 0.55) 99.98%);
+  }
+
+
+  @keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+h1:hover .animate-float {
+  opacity: 1;
+}
+  
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
+
+
+
+/* 
+.blob-cursor-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.filter-svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.blobs-wrapper {
+  position: absolute;
+  inset: 0;
+}
+
+.blob {
+  position: absolute;
+  will-change: transform;
+}
+
+.inner-blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
