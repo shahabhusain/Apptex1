@@ -1,26 +1,25 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Portfolios from '../components/portfolio/Portfolios';
 import Title from '../components/portfolio/Title';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
-import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
-import Particles from '../../Reactbits/Particles/Particles';
+import Beams from '../../Reactbits/Beams/Beams';
 
 const Portfolio = () => {
 
   return (
-    <div className=' relative'>
-      <div style={{ width: '100%', height: '5000px',}}>
-  <Particles
-    particleColors={['#ffffff', '#ffffff']}
-    particleCount={600}
-    particleSpread={5}
-    speed={0.1}
-    particleBaseSize={100}
-    moveParticlesOnHover={true}
-    alphaParticles={false}
-    disableRotation={false}
+    <div>
+<div className=' fixed top-0 z-[-1]' style={{ width: '100%', height: '800px', }}>
+  <Beams
+    beamWidth={2}
+    beamHeight={15}
+    beamNumber={12}
+    lightColor="#ffffff"
+    speed={2}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={0}
   />
 </div>
 

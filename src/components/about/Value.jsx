@@ -37,10 +37,10 @@ const Value = () => {
     <div className=' flex flex-col items-center justify-center gap-y-4 w-[90%] mx-auto mt-32'>
      <h1 className=' py-1 px-4 bg-[#4FAD2E1A] text-[#4FAD2E] text-[16px] w-fit font-[600]'>What We Stand For</h1>
      <h1 className='  text-[32px] font-[800] text-center text-white'>APPTEX <span className='bg-gradient-to-l from-orange-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent font-[800]'>Core Values</span></h1>
-     <div className=' grid md:grid-cols-3 grid-cols-1 mt-12'>
+     <div className=' grid md:grid-cols-3 gap-2 grid-cols-1 mt-12'>
       {
         ValueData.map((item)=>(
-          <div className=' border-[1px] border-[#e6e5e5] p-3 rounded-md'>
+          <div className=' border-[1px] bg-[#1717179b] border-[#e6e5e5] p-3 rounded-md'>
              <div className=' p-12 flex flex-col gap-2'>
                <img className=' w-[50px]' src={item.img} alt="" />
                <h1 className=' text-[24px] font-[700] text-[#ffffff]'>{item.title}</h1>

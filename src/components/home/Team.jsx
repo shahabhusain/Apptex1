@@ -62,10 +62,10 @@ const Team = () => {
   };
 
   return (
-   <div className='relative' >
+   <div className='relative bg-[#1717179b] pb-6' >
 
       {/* Content container */}
-      <div className="bg1 flex items-center mt-32 relative z-10">
+      <div className=" flex items-center mt-32 relative z-10">
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column - Text */}
           <div className="flex flex-col gap-2.5 justify-center md:pl-20 p-4">
@@ -82,14 +82,14 @@ const Team = () => {
           </div>
           
           {/* Right Column - Team Member Carousel */}
-          <div className=" bg-gray-800 pb-12 w-full">
+          <div className="">
             <div className="">
               {/* Team Member Card */}
               <div className="">
                 <img 
                   src={teamMembers[currentSlide].image} 
                   alt={teamMembers[currentSlide].name}
-                  className="w-full md:h-[620px] object-contain object-center rounded-lg"
+                  className="w-full md:h-[520px] object-contain object-center rounded-lg"
                 />
               </div>
               

@@ -147,7 +147,7 @@ const RealWorld = () => {
               <div
                 key={i}
                 ref={addToPanelsRef}
-                className="panel group relative w-[400px] h-full shrink-0 overflow-hidden cursor-pointer border-[2px] border-[#b0acac2a] hover:shadow-xl transition-all duration-500"
+                className="panel group relative w-[400px] h-full shrink-0 overflow-hidden cursor-pointer border-[2px] border-[#b0acac2a] bg-[#1717179b] hover:shadow-xl transition-all duration-500"
               >
                 <div className="absolute inset-0 overflow-hidden">
                   <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

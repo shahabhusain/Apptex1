@@ -4,7 +4,7 @@ import { FaInstagram, FaTwitter, FaYoutube, FaCog } from 'react-icons/fa';
 const ContactForm = () => {
   return (
     <div className="flex justify-center items-center md:my-20 my-10 ">
-      <div className="bg-gray-900 p-8 rounded-xl md:w-[60%] w-[95%] border border-gray-800 shadow-lg">
+      <div className="bg-[#1717179b] p-8 rounded-xl md:w-[60%] w-[95%] border border-gray-800 shadow-lg">
         {/* Social Icons */}
         <div className="flex justify-center space-x-4 mb-6">
           <a href="#" className="text-gray-400 hover:text-white">

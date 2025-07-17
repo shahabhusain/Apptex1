@@ -47,7 +47,7 @@ const Product = () => {
   ];
 
   return (
-    <div className='flex flex-col items-center justify-center gap-y-4 w-[90%] md:p-12 p-4 bg-black mx-auto my-20 rounded-2xl'>
+    <div className='flex flex-col items-center justify-center gap-y-4 w-[90%] bg-[#1717179b] md:p-12 p-4  mx-auto my-20 rounded-2xl'>
       <h1 className='text-[32px] font-[800] text-center text-white'>
         Services{' '}
         <span className='bg-gradient-to-l from-orange-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent font-[800]'>
@@ -57,7 +57,7 @@ const Product = () => {
       <div className='grid md:grid-cols-2 grid-cols-1 gap-6 mt-12'>
         {ValueData.map((item, index) => (
           <div key={index} className='border-[1px] border-[#2e2c2c] p-3 rounded-md'>
-            <div className='bg-[#191818] p-12 flex flex-col gap-2'>
+            <div className='bg-[#1717179b] p-12 flex flex-col gap-2'>
               <img className='w-[50px]' src={item.img} alt='' />
               <h1 className='text-[24px] font-[700] text-[#ffffff]'>{item.title}</h1>
               <p className='text-[#ffffff] text-[16px] font-[400]'>{item.description}</p>

@@ -1,20 +1,11 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa'
-import Aurora from '../../Reactbits/Aurora/Aurora'
-
 const Footer = () => {
   return (
-    <div className='relative w-full'>
-        <div className=' w-full h-[300px]'>
-          <Aurora
-  colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-  blend={0.5}
-  amplitude={1.0}
-  speed={0.5}
-/>
-        </div>
-      <div className='absolute top-0 w-full text-white'>
+    <div>
+
+      <div className=' w-full text-white bg-[#1717179b]'>
         <div className='w-[90%] mx-auto py-11'>
           <div className='flex flex-col md:flex-row justify-between items-start gap-12 md:gap-0'>
             {/* Logo Section */}

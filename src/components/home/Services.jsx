@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import skiwit from '../../assets/skiwit.png'
-import local from '../../assets/local.png'
 import services1 from '../../assets/services/services.jpg'
 import services2 from '../../assets/services/services1.jpg'
 import services3 from '../../assets/services/services2.jpeg'
-import Beams from '../../../Reactbits/Beams/Beams';
 
 const Services = () => {
   const [hoveredService, setHoveredService] = useState(null);
@@ -18,19 +15,8 @@ const Services = () => {
   };
 
   return (
-       <div className=' relative'>
-                <div style={{ width: '100%', height: '100vh', zIndex:"-1000" }}  className='  md:w-[85%] w-[97%] mx-auto'>
-          
-            <Beams  beamWidth={2}
-    beamHeight={15}
-    beamNumber={12}
-    lightColor="#ffffff"
-    speed={2}
-    noiseIntensity={1.75}
-    scale={0.2}
-    rotation={0} />
-    </div>
-         <div className=" absolute top-0 px-4 md:px-12 py-20 ">
+       <div>
+         <div className=" mt-32 px-4 md:px-12 py-20 ">
       {/* Header */}
       <div className="flex flex-col md:flex-row gap-4 items-center text-center justify-center mt-6">
         <div className="md:w-[55%] flex flex-col gap-4 md:pl-6">
