@@ -1,9 +1,22 @@
 import React from 'react';
 import RotatingText from '../../../Reactbits/RotatingText/RotatingText';
+import Beams from '../../../Reactbits/Beams/Beams';
 
 const Hero = () => {
   return (
     <div>
+      <div className=' fixed top-0 z-[-1]' style={{ width: '100%', height: '800px', }}>
+  <Beams
+    beamWidth={2}
+    beamHeight={15}
+    beamNumber={12}
+    lightColor="#ffffff"
+    speed={2}
+    noiseIntensity={1.75}
+    scale={0.2}
+    rotation={0}
+  />
+</div>
       {/* Content Container */}
       <div className="w-full flex flex-col items-center justify-center px-4 md:px-12">
         <h1 className="text-[48px] md:text-[120px] text-center font-bold text-white leading-[1.1] md:leading-[1]">
