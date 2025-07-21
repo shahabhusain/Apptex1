@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import services1 from '../../assets/services/services.jpg'
 import services2 from '../../assets/services/services1.jpg'
 import services3 from '../../assets/services/services2.jpeg'
+import services4 from '../../assets/services/services3.jpg'
+import services5 from '../../assets/services/services4.jpg'
+import services6 from '../../assets/services/services5.jpg'
+import services7 from '../../assets/services/services6.jpeg'
+import services8 from '../../assets/services/services7.webp'
 
 const Services = () => {
   const [hoveredService, setHoveredService] = useState(null);
@@ -57,7 +62,7 @@ const Services = () => {
                 style={{ animationDuration: '3s' }}
               />
               <img 
-                src={services3} 
+                src={services2} 
                 alt="" 
                 className="absolute w-[300px] h-[130px] object-cover top-72 rounded-md right-32 animate-float" 
                 style={{ animationDuration: '3s', animationDelay: '0.5s' }}
@@ -81,7 +86,7 @@ const Services = () => {
           {hoveredService === 'web' && (
             <>
               <img 
-                src={services2} 
+                src={services4} 
                 alt="" 
                 className="absolute w-[300px] h-[130px] object-cover rounded-md -top-8 left-32 animate-float" 
                 style={{ animationDuration: '3s' }}
@@ -111,13 +116,13 @@ const Services = () => {
           {hoveredService === 'app' && (
             <>
                 <img 
-                src={services2} 
+                src={services5} 
                 alt="" 
                 className="absolute w-[300px] h-[130px] object-cover rounded-md -top-32 left-32 animate-float" 
                 style={{ animationDuration: '3s' }}
               />
               <img 
-                src={services3} 
+                src={services6} 
                 alt="" 
                 className="absolute w-[300px] h-[130px] object-cover rounded-md top-20 right-32 animate-float" 
                 style={{ animationDuration: '3s', animationDelay: '0.5s' }}
@@ -141,13 +146,13 @@ const Services = () => {
           {hoveredService === 'backend' && (
             <>
               <img 
-                src={services2} 
+                src={services7} 
                 alt="" 
                 className="absolute w-[300px] h-[130px] object-cover rounded-md -top-8 left-32 animate-float" 
                 style={{ animationDuration: '3s' }}
               />
               <img 
-                src={services3} 
+                src={services8} 
                 alt="" 
                 className="absolute w-[300px] h-[130px] object-cover rounded-md -top-8 right-32 animate-float" 
                 style={{ animationDuration: '3s', animationDelay: '0.5s' }}

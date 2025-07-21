@@ -6,7 +6,7 @@ const ContactForm = () => {
     <div className="flex justify-center items-center md:my-20 my-10 ">
       <div className="bg-[#1717179b] p-8 rounded-xl md:w-[60%] w-[95%] border border-gray-800 shadow-lg">
         {/* Social Icons */}
-        <div className="flex justify-center space-x-4 mb-6">
+        {/* <div className="flex justify-center space-x-4 mb-6">
           <a href="#" className="text-gray-400 hover:text-white">
             <FaInstagram className="w-5 h-5" />
           </a>
@@ -19,14 +19,14 @@ const ContactForm = () => {
           <a href="#" className="text-gray-400 hover:text-white">
             <FaYoutube className="w-5 h-5" />
           </a>
-        </div>
+        </div> */}
         
         {/* Pagination Dots */}
-        <div className="flex justify-center mb-6">
+        {/* <div className="flex justify-center mb-6">
           <div className="w-6 h-1 rounded-full bg-purple-500 mx-1"></div>
           <div className="w-1 h-1 rounded-full bg-gray-600 mx-1"></div>
           <div className="w-1 h-1 rounded-full bg-gray-600 mx-1"></div>
-        </div>
+        </div> */}
         
         {/* Form */}
         <form className="space-y-4">

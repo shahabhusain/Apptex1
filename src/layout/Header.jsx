@@ -49,8 +49,8 @@ const Header = () => {
 
   return (
     <div className={`fixed w-full z-50 transition-colors duration-300`}>
-      <div className="flex w-[90%] mx-auto items-center justify-end py-4 px-6">
-
+      <div className="flex w-[90%] mx-auto items-center justify-between py-4 px-6">
+ <img className=' w-[200px]' src={logo} alt="" />
         {/* Desktop Menu Button - Always visible */}
         <button
           className="text-2xl text-white focus:outline-none transition-transform hover:scale-110"
@@ -59,6 +59,8 @@ const Header = () => {
         >
           {menuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
         </button>
+
+       
       </div>
 
       {/* Full-screen Desktop Menu Overlay */}

@@ -4,6 +4,7 @@ import team1 from '../../assets/team2.png';
 import team2 from '../../assets/team3.png';
 import team3 from '../../assets/team4.png';
 import team4 from '../../assets/team5.png';
+import team5 from '../../assets/team6.png';
 import { FaLinkedin } from "react-icons/fa6";
 import ProfileCard from '../../../Reactbits/ProfileCard/ProfileCard';
 
@@ -12,6 +13,14 @@ const Team = () => {
   
   // Team members data
   const teamMembers = [
+        {
+      title: "Guided by Purpose, Led with Clarity",
+      name: "Ameer Kakar ",
+      position: "Lead",
+      image: team5,
+      desc: "Ameer kakar is a thoughtful leader who brings clarity, purpose, and heart to everything he builds. With a deep understanding of people and a passion for meaningful innovation, he guides the team with vision and quiet confidence.",
+      link: "https://www.linkedin.com/in/ameer-kakar-0316/?originalSubdomain=pk"
+    },
     {
       title: "A team of makers, thinkers, and problem solvers",
       name: "Hajera Bakhshi",
@@ -51,7 +60,8 @@ const Team = () => {
       image: team4,
       desc: "A problem solver at heart, Afaq Zahir builds fast, scalable mobile apps with precision and care. Their work blends technical depth with a seamless user experience.",
       link: "https://www.linkedin.com/in/afaqxdev"
-    }
+    },
+   
   ];
 
   const nextSlide = () => {
@@ -84,8 +94,8 @@ const Team = () => {
           {/* Right Column - Profile Card */}
           <div className="flex flex-col items-center justify-center p-4">
             <ProfileCard
-              name={teamMembers[currentSlide].name}
-              title={teamMembers[currentSlide].position}
+              name={false}
+              title={false}
               handle={teamMembers[currentSlide].position.toLowerCase().replace(/\s+/g, '')}
               status="Online"
               contactText="View Profile"
