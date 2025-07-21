@@ -24,7 +24,7 @@ const Hero = () => {
           <span className='mt-4 flex justify-center'>
             <div className=' w-full flex items-center justify-center'>
               <RotatingText
-                texts={['Innovative', 'Scalable', 'Secure', 'Cutting-edge']}
+                texts={['Build', 'Scale', 'Accelerate', 'Transform']}
                 mainClassName="text-white bg-pink-500 text-center p-5 rounded-md w-[800px] text-center font-bold"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
