@@ -9,13 +9,13 @@ import { motion } from 'framer-motion'
 const App = () => {
   return (
     <div>
-      <SplashCursor />
+      {/* <SplashCursor /> */}
 
       <motion.div
         initial={{ top: 12 }}
         animate={{ top: 'calc(100% - 7rem)' }} // 3rem = bottom-12
         transition={{ duration: 1.5, ease: 'easeOut' }}
-        className='fixed left-12 w-[120px] z-[1000] cursor-pointer'
+        className='fixed left-12 w-[100px] z-[1000] cursor-pointer'
         style={{ position: 'fixed' }}
       >
          <a href="https://wa.me/923161964761" target='_blank'>

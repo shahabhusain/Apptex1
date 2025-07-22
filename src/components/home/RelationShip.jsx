@@ -8,17 +8,17 @@ const RelationShip = () => {
          <div className=' flex items-center justify-around mt-12'>
          <div className=' w-[400px] h-[250px] bg-[#F8F8F8] flex flex-col items-center justify-center gap-y-3 text-center '>
             <h1 className=' md:text-[54px] text-[40px] md:font-[800] font-[600] text-black'>150+</h1>
-            <p className=' md:text-[26px] text-[16px] font-[500] text-[#949494]'>Projects Delivered</p>
+            <p className=' md:text-[26px] text-[16px] font-[400] text-[#949494]'>Projects Delivered</p>
         </div>
 
         <div className=' w-[400px] h-[250px] bg-[#F8F8F8] flex flex-col items-center justify-center gap-y-3 text-center '>
             <h1 className=' md:text-[54px] text-[40px] md:font-[800] font-[600] text-black'>5+</h1>
-            <p className=' md:text-[26px] text-[16px] font-[500] text-[#949494]'>Years Experience</p>
+            <p className=' md:text-[26px] text-[16px] font-[400] text-[#949494]'>Years Experience</p>
         </div>
 
         <div className=' w-[400px] h-[250px] bg-[#F8F8F8] flex-col flex items-center justify-center gap-y-3 text-center '>
             <h1 className=' md:text-[54px] text-[40px] md:font-[800] font-[600] text-black'>120+</h1>
-            <p className=' md:text-[26px] text-[16px] font-[500] text-[#949494]'>Five Star Ratings</p>
+            <p className=' md:text-[26px] text-[16px] font-[400] text-[#949494]'>Five Star Ratings</p>
         </div>
          </div>
     </div>

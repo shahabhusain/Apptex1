@@ -8,6 +8,7 @@ import Build from '../components/home/Build';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import Trust from '../components/home/Trust';
+import Technology from '../components/home/Technology';
 const Home = () => {
 
 
@@ -22,6 +23,7 @@ const Home = () => {
         <section className=' absolute top-32' >
           <Hero />
           <WhatWeDo />
+          <Technology />
           <Services />
           <RealWorld />
           <Team />

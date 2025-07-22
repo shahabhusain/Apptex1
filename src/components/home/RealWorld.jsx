@@ -83,7 +83,7 @@ const data = [
     application: "Admin panel/Campaigns/Mobile App",
     title1: "CheapSkate",
     path: "/cheap",
-    bgColor: "linear-gradient(90deg,rgba(178, 217, 214, 0.81) 20%, rgba(85, 161, 159, 1) 39%, rgba(38, 150, 147, 1) 76%", // slate
+    bgColor: "linear-gradient(90deg,rgba(0, 107, 98, 0.81) 20%, rgba(85, 161, 159, 1) 39%, rgba(38, 150, 147, 1) 76%", // slate
   },
 ];
 
@@ -143,15 +143,15 @@ const data = [
               <div
                 key={i}
                 ref={addToPanelsRef}
-                className="panel group relative w-[400px] h-full shrink-0 overflow-hidden cursor-pointer border-[2px] border-[#b0acac2a] bg-[#1717179b] hover:shadow-xl transition-all duration-500"
+                className="panel group relative w-[400px] h-full shrink-0 overflow-hidden cursor-pointer border-[2px] border-[#b0acac2a] bg-[#fff] hover:shadow-xl transition-all duration-500"
               >
                 <div className="absolute inset-0 overflow-hidden">
                   <div style={{backgroundImage:item.bgColor}} className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
 
                 <div className="absolute inset-0 z-10 flex flex-col items-center justify-center transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-10">
-                  <h2 className="text-[28px] font-bold text-white tracking-tight">{item.title}</h2>
-                  <p className="text-[18px] text-white text-center">{item.application}</p>
+                  <h2 className="text-[28px] font-bold text-black tracking-tight">{item.title}</h2>
+                  <p className="text-[18px] text-black text-center">{item.application}</p>
                   <div className="absolute bottom-8 w-10 h-1 bg-black rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
                 </div>
 
@@ -166,6 +166,11 @@ const data = [
                 </div>
               </div>
             ))}
+            <div className='border-[2px] w-[400px] border-[#b0acac2a] px-3 flex flex-col items-center justify-center'>
+              <h1 className=' text-white text-center text-[30px] font-medium'>This Could Be Your Success Story</h1>
+              <p className=' text-white text-[14px] font-normal text-center'>We've helped others innovate and grow—now it’s your turn to be in the spotlight.</p>
+               <Link className=' bg-white text-black rounded-md py-2 px-5 text-[16px] font-normal mt-4' to="/contact">Contact Us</Link>
+            </div>
           </div>
         </div>
       </div>
