@@ -10,6 +10,7 @@ import img6 from '../../assets/proj6.png';
 import img7 from '../../assets/proj8.png';
 import img8 from '../../assets/proj9.png';
 import Beams from '../../../Reactbits/Beams/Beams';
+import { Link } from 'react-router-dom';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -19,64 +20,73 @@ const RealWorld = () => {
   const horizontalContainerRef = useRef(null);
   const panelsRef = useRef([]);
 
-  const data = [
-    {
-      img: img4,
-      title: "Fitness Platform",
-      application: "Mobile Application/Fitness/Web App",
-      title1: "Winners Win - Fitness platform",
-      path: ""
-    },
-    {
-      img: img8,
-      title: "Health Care Platform",
-      application: "Hire/Caregiver/Mobile App",
-      title1: "Local Care Giver",
-      path: ""
-    },
-    {
-      img: img2,
-      title: "Barber Services",
-      application: "Mobile Application/BEAUTY & LIFESTYLE/SERVICE BOOKING",
-      title1: "Omni – Redefining Beauty & Barber Services",
-      path: ""
-    },
-    {
-      img: img5,
-      title: "skydiving Platform",
-      application: "coach/Users/Mobile App",
-      title1: "Skiwit",
-      path: ""
-    },
-    {
-      img: img1,
-      title: "Online Education Platform",
-      application: "Website/lms/Mobile App",
-      title1: "Development Central",
-      path: ""
-    },
-    {
-      img: img3,
-      title: "Social Media Platform",
-      application: "social app/video/Mobile App",
-      title1: "Mvuala",
-      path: ""
-    },
-    {
-      img: img6,
-      title: "Medical Platform",
-      application: "admin panel/health/Mobile App",
-      title1: "AskMid",
-      path: ""
-    },
-    {
-      img: img7,
-      title: "Donation Platform",
-      application: "Admin panel/Campaigns/Mobile App",
-      title1: "CheapSkate",
-      path: ""
-    },
-  ];
+const data = [
+  {
+    img: img4,
+    title: "Fitness Platform",
+    application: "Mobile Application/Fitness/Web App",
+    title1: "Winners Win - Fitness platform",
+    path: "/winner",
+    bgColor: "linear-gradient(90deg,rgba(186, 190, 191, 1) 0%, rgba(125, 125, 125, 1) 50%, rgba(38, 41, 39, 1) 100%", // blue
+  },
+  {
+    img: img8,
+    title: "Health Care Platform",
+    application: "Hire/Caregiver/Mobile App",
+    title1: "Local Care Giver",
+    path: "/local",
+    bgColor: "linear-gradient(90deg,rgba(67, 160, 196, 1) 0%, rgba(143, 199, 87, 1) 50%, rgba(83, 237, 139, 1) 100%)", 
+  },
+  {
+    img: img2,
+    title: "Barber Services",
+    application: "Mobile Application/BEAUTY & LIFESTYLE/SERVICE BOOKING",
+    title1: "Omni – Redefining Beauty & Barber Services",
+    path: "/omni",
+    bgColor: "linear-gradient(90deg,rgba(204, 129, 80, 1) 0%, rgba(227, 116, 116, 1) 50%, rgba(201, 163, 85, 1) 100%", // amber/brown
+  },
+  {
+    img: img5,
+    title: "skydiving Platform",
+    application: "coach/Users/Mobile App",
+    title1: "Skiwit",
+    path: "/skiwit",
+    bgColor: "linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(140, 136, 136, 1) 50%", // purple
+  },
+  {
+    img: img1,
+    title: "Online Education Platform",
+    application: "Website/lms/Mobile App",
+    title1: "Development Central",
+    path: "/develop",
+    bgColor: "linear-gradient(90deg,rgba(0, 222, 181, 0.81) 20%, rgba(42, 176, 154, 1) 39%, rgba(42, 176, 127, 1) 76%", // red
+  },
+  {
+    img: img3,
+    title: "Social Media Platform",
+    application: "social app/video/Mobile App",
+    title1: "Mvuala",
+    path: "/movla",
+    bgColor: "linear-gradient(90deg,rgba(230, 99, 73, 0.81) 20%, rgba(186, 78, 78, 1) 39%, rgba(252, 101, 101, 1) 76%", // teal
+  },
+  {
+    img: img6,
+    title: "Medical Platform",
+    application: "admin panel/health/Mobile App",
+    title1: "AskMid",
+    path: "/askmid",
+    bgColor: "linear-gradient(90deg,rgba(73, 230, 217, 0.81) 20%, rgba(78, 186, 184, 1) 39%, rgba(101, 252, 247, 1) 76%", // yellow
+  },
+  {
+    img: img7,
+    title: "Donation Platform",
+    application: "Admin panel/Campaigns/Mobile App",
+    title1: "CheapSkate",
+    path: "/cheap",
+    bgColor: "linear-gradient(90deg,rgba(178, 217, 214, 0.81) 20%, rgba(85, 161, 159, 1) 39%, rgba(38, 150, 147, 1) 76%", // slate
+  },
+];
+
 
   useEffect(() => {
     const panels = panelsRef.current;
@@ -109,20 +119,6 @@ const RealWorld = () => {
 
   return (
     <div className='relative w-full'>
-      {/* Background beams - positioned absolutely behind content
-      <div className='absolute top-0 left-0 w-full h-full z-0'>
-        <Beams 
-          beamWidth={2}
-          beamHeight={15}
-          beamNumber={12}
-          lightColor="#ffffff"
-          speed={2}
-          noiseIntensity={1.75}
-          scale={0.2}
-          rotation={0} 
-        />
-      </div> */}
-
       {/* Content container - in normal document flow */}
       <div className='relative z-10'>
         <div className='flex flex-col items-center justify-center my-20'>
@@ -150,7 +146,7 @@ const RealWorld = () => {
                 className="panel group relative w-[400px] h-full shrink-0 overflow-hidden cursor-pointer border-[2px] border-[#b0acac2a] bg-[#1717179b] hover:shadow-xl transition-all duration-500"
               >
                 <div className="absolute inset-0 overflow-hidden">
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div style={{backgroundImage:item.bgColor}} className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </div>
 
                 <div className="absolute inset-0 z-10 flex flex-col items-center justify-center transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-10">
@@ -163,9 +159,9 @@ const RealWorld = () => {
                   <div className="mb-4 w-12 h-1 bg-white rounded-full scale-0 group-hover:scale-100 transition-transform delay-100 duration-500"></div>
                   <h1 className="text-[30px] font-extrabold tracking-tight mb-2 text-center">{item.title1}</h1>
                   <p className="text-[18px] text-center text-gray-300">{item.application}</p>
-                  <button className="mt-6 px-6 py-2 bg-white text-black rounded-full font-medium opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all delay-150 duration-500 hover:bg-gray-100">
+                  <Link to={item.path} className="mt-6 px-6 py-2 bg-white text-black rounded-full font-medium opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all delay-150 duration-500 hover:bg-gray-100">
                     View Project
-                  </button>
+                  </Link>
                   <img className='mt-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all delay-150 duration-500' src={item.img} alt="" />
                 </div>
               </div>

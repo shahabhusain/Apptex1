@@ -11,7 +11,7 @@ import Customized from '../caseStudies/DevelopmentCenter/Customized'
 
 const DevelopmenCenterPage = () => {
   return (
-    <div>
+    <div className=' bg-white'>
         <Hero />
         <Technology />
         <Project />

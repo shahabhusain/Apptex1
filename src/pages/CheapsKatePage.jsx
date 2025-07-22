@@ -11,7 +11,7 @@ import Customized from '../caseStudies/Cheapskate/Customized'
 
 const CheapsKatePage = () => {
   return (
-    <div>
+    <div className=' bg-white'>
         <Hero />
         <Technology />
         <Project />

@@ -11,7 +11,7 @@ import Customized from '../caseStudies/Skiwit/Customized'
 
 const Skiwit = () => {
   return (
-    <div>
+    <div className=' bg-white'>
         <Hero />
         <Technology />
         <Project />

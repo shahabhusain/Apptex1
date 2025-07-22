@@ -11,7 +11,7 @@ import Customized from '../caseStudies/WinnerWin/Customized'
 
 const WinnerPage = () => {
   return (
-    <div>
+    <div className=' bg-white'>
         <Hero />
         <Technology />
         <Project />

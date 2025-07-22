@@ -7,6 +7,7 @@ import Team from '../components/home/Team';
 import Build from '../components/home/Build';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
+import Trust from '../components/home/Trust';
 const Home = () => {
 
 
@@ -16,6 +17,7 @@ const Home = () => {
            <div className=' absolute top-0'>
          <Header />
       </div>
+
       <main>
         <section className=' absolute top-32' >
           <Hero />
@@ -23,6 +25,7 @@ const Home = () => {
           <Services />
           <RealWorld />
           <Team />
+          <Trust />
           <Build />
           <Footer />
         </section>

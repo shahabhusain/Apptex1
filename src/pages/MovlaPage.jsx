@@ -11,7 +11,7 @@ import Short from '../caseStudies/movla/Components/Short'
 
 const MovlaPage = () => {
   return (
-    <div>
+    <div className=' bg-white'>
         <Hero />
         <Technology />
         <Project />

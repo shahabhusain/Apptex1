@@ -14,7 +14,7 @@ import Followers from '../caseStudies/LocalCaregiver/Followers'
 
 const LocalPage = () => {
   return (
-    <div>
+    <div className=' bg-white'>
         <Hero />
         <Technology />
         <Project />

@@ -145,9 +145,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center gap-4 text-sm">
             <p>&copy; 2025 Apptex Software Solution. All rights reserved.</p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
+              <button className="hover:text-white transition-colors">Privacy Policy</button>
+              <button className="hover:text-white transition-colors">Terms of Service</button>
+              <button className="hover:text-white transition-colors">Cookie Policy</button>
             </div>
           </div>
           

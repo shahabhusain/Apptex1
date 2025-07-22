@@ -50,7 +50,7 @@ const Header = () => {
   return (
     <div className={`fixed w-full z-50 transition-colors duration-300`}>
       <div className="flex w-[90%] mx-auto items-center justify-between py-4 px-6">
- <img className=' w-[200px]' src={logo} alt="" />
+      <Link to="/"> <img className=' w-[200px]' src={logo} alt="" /></Link>
         {/* Desktop Menu Button - Always visible */}
         <button
           className="text-2xl text-white focus:outline-none transition-transform hover:scale-110"

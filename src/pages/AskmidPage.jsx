@@ -12,7 +12,7 @@ import Health from '../caseStudies/Asmid/Health'
 
 const AskmidPage = () => {
   return (
-    <div>
+    <div className=' bg-white'>
         <Hero />
         <Technology />
         <Project />

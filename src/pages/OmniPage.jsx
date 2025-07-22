@@ -11,7 +11,7 @@ import Technology from '../caseStudies/Omni/Technology'
 import Booking from '../caseStudies/Omni/Booking'
 const OmniPage = () => {
   return (
-    <div>
+    <div className=' bg-white'>
         <Hero />
         <Technology />
         <Project />
