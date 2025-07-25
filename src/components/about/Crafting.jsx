@@ -8,7 +8,9 @@ const Crafting = () => {
       </h1>
 
       <p className='text-white text-center text-[16px] md:text-[18px] leading-relaxed max-w-4xl mx-auto'>
-        We are a passionate team of software developers committed to building scalable, user-focused, and performance-driven digital solutions. Our mission is to bridge the gap between ideas and technology by delivering high-quality applications tailored to modern business needs. From front-end interfaces that delight users to robust back-end systems that power functionality, we craft every line of code with purpose and precision.
+        Apptex is a dynamic IT solutions provider, empowering businesses to grow through smart technology and impactful digital strategies. Founded with a vision to deliver quality-driven, customized tech solutions, we specialize in mobile app and web development, SEO, ASO, and social media marketing.
+
+With a client-first mindset and a team of passionate professionals, we’ve helped businesses of all sizes unlock digital potential. Our journey is shaped by innovation, agility, and a commitment to excellence. Every line of code we write and every campaign we launch is aimed at delivering real value.
       </p>
     </div>
   );

@@ -99,7 +99,7 @@ const data = [
         ease: "none",
         scrollTrigger: {
           trigger: horizontalWrapperRef.current,
-          start: "top 122px",
+          start: "top 50px",
           end: () => `+=${horizontalContainerRef.current.scrollWidth}`,
           pin: true,
           scrub: 1,
@@ -133,7 +133,7 @@ const data = [
         {/* Horizontal scroll section */}
         <div 
           ref={horizontalWrapperRef}
-          className="relative w-full h-[600px] overflow-hidden"
+          className="relative w-full h-[750px] overflow-hidden"
         >
           <div 
             ref={horizontalContainerRef}

@@ -40,7 +40,7 @@ const Hero = () => {
           <span className="font-normal block">digital solutions.</span>
         </h1>
         <p className="text-[#949494] text-center text-[18px] md:text-[20px] font-medium mt-6 md:mt-8 max-w-[800px]">
-          Simple, Smart, Scalable, and User-Focused Digital Solutions for Web and Mobile Technologies.
+         Custom Mobile Apps • Responsive Websites • Growth-Driven Marketing
         </p>
       </div>
     </div>
