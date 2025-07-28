@@ -93,13 +93,16 @@ const data = [
     
     if (!panels.length) return;
 
+      const isMobile = window.innerWidth <= 768;
+  const offsetMultiplier = isMobile ? 13 : 9;
+
     const ctx = gsap.context(() => {
       gsap.to(horizontalContainerRef.current, {
-        xPercent: -(9 * (panels.length - 1)),
+        xPercent: -(offsetMultiplier * (panels.length - 1)),
         ease: "none",
         scrollTrigger: {
           trigger: horizontalWrapperRef.current,
-          start: "top 50px",
+          start: "top 60px",
           end: () => `+=${horizontalContainerRef.current.scrollWidth}`,
           pin: true,
           scrub: 1,
@@ -133,7 +136,7 @@ const data = [
         {/* Horizontal scroll section */}
         <div 
           ref={horizontalWrapperRef}
-          className="relative w-full h-[750px] overflow-hidden"
+          className="relative w-full h-[700px] overflow-hidden"
         >
           <div 
             ref={horizontalContainerRef}

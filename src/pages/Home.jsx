@@ -20,16 +20,16 @@ const Home = () => {
       </div>
 
       <main>
-        <section className=' absolute top-32' >
+        <section className=' absolute top-32 left-0 right-0' >
           <Hero />
-          <WhatWeDo />
-          <Technology />
-          <Services />
-          <RealWorld />
-          <Team />
-          <Trust />
-          <Build />
-          <Footer />
+           <WhatWeDo />
+           <Technology />
+           <Services />
+            <RealWorld />
+            <Team />
+             <Trust />
+             <Build />
+               <Footer />         
         </section>
       </main>
        </div>

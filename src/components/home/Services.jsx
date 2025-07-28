@@ -58,13 +58,13 @@ const Services = () => {
               <img 
                 src={services1} 
                 alt="" 
-                className="absolute w-[300px] h-[130px] object-cover -top-8 rounded-md left-32 animate-float" 
+                className="absolute md:block hidden w-[300px] h-[130px] object-cover -top-8 rounded-md left-32 animate-float" 
                 style={{ animationDuration: '3s' }}
               />
               <img 
                 src={services2} 
                 alt="" 
-                className="absolute w-[300px] h-[130px] object-cover top-72 rounded-md right-32 animate-float" 
+                className="absolute md:block hidden w-[300px] h-[130px] object-cover top-72 rounded-md right-12 animate-float" 
                 style={{ animationDuration: '3s', animationDelay: '0.5s' }}
               />
             </>
@@ -88,13 +88,13 @@ const Services = () => {
               <img 
                 src={services4} 
                 alt="" 
-                className="absolute w-[300px] h-[130px] object-cover rounded-md -top-8 left-32 animate-float" 
+                className="absolute md:block hidden w-[300px] h-[130px] object-cover rounded-md -top-8 left-32 animate-float" 
                 style={{ animationDuration: '3s' }}
               />
               <img 
                 src={services3} 
                 alt="" 
-                className="absolute w-[300px] h-[130px] object-cover rounded-md top-32 right-32 animate-float" 
+                className="absolute md:block hidden w-[300px] h-[130px] object-cover rounded-md top-32 right-32 animate-float" 
                 style={{ animationDuration: '3s', animationDelay: '0.5s' }}
               />
             </>
@@ -118,13 +118,13 @@ const Services = () => {
                 <img 
                 src={services5} 
                 alt="" 
-                className="absolute w-[300px] h-[130px] object-cover rounded-md -top-32 left-32 animate-float" 
+                className="absolute md:block hidden w-[300px] h-[130px] object-cover rounded-md -top-32 left-32 animate-float" 
                 style={{ animationDuration: '3s' }}
               />
               <img 
                 src={services6} 
                 alt="" 
-                className="absolute w-[300px] h-[130px] object-cover rounded-md top-20 right-32 animate-float" 
+                className="absolute md:block hidden w-[300px] h-[130px] object-cover rounded-md top-20 right-12 animate-float" 
                 style={{ animationDuration: '3s', animationDelay: '0.5s' }}
               />
             </>
@@ -134,32 +134,32 @@ const Services = () => {
 
         {/* Backend Development */}
         <h1
-          onMouseEnter={() => handleMouseEnter('backend')}
+          onMouseEnter={() => handleMouseEnter('seo')}
           onMouseLeave={handleMouseLeave}
           className="text-[46px] cursor-pointer font-[700] relative w-full transition-all duration-300"
           style={{
-            color: hoveredService === 'backend' ? 'white' : 'transparent',
+            color: hoveredService === 'seo' ? 'white' : 'transparent',
             WebkitTextStroke: '2px white',
             textStroke: '2px white'
           }}
         >
-          {hoveredService === 'backend' && (
+          {hoveredService === 'seo' && (
             <>
               <img 
                 src={services7} 
                 alt="" 
-                className="absolute w-[300px] h-[130px] object-cover rounded-md -top-8 left-32 animate-float" 
+                className="absolute md:block hidden w-[300px] h-[130px] object-cover rounded-md -top-8 left-12 animate-float" 
                 style={{ animationDuration: '3s' }}
               />
               <img 
                 src={services8} 
                 alt="" 
-                className="absolute w-[300px] h-[130px] object-cover rounded-md -top-8 right-32 animate-float" 
+                className="absolute md:block hidden w-[300px] h-[130px] object-cover rounded-md -top-8 right-12 animate-float" 
                 style={{ animationDuration: '3s', animationDelay: '0.5s' }}
               />
             </>
           )}
-          <span className="flex items-center justify-center">Backend Development</span>
+          <span className="flex items-center justify-center">Search Engine Optimization</span>
         </h1>
 
       </div>

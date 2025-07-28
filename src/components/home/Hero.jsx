@@ -20,12 +20,12 @@ const Hero = () => {
       {/* Content Container */}
       <div className="w-full flex flex-col items-center justify-center px-4 md:px-12">
         <h1 className="text-[48px] md:text-[120px] text-center font-bold text-white leading-[1.1] md:leading-[1]">
-          <span className="font-normal block">We help</span>
+          <span className="font-normal block ">We help</span>
           <span className='mt-4 flex justify-center'>
             <div className=' w-full flex items-center justify-center'>
               <RotatingText
                 texts={['Build', 'Scale', 'Accelerate', 'Transform']}
-                mainClassName="text-white bg-pink-500 text-center p-5 rounded-md w-[800px] text-center font-bold"
+                mainClassName="text-white bg-pink-500 text-center p-5 rounded-md md:w-[800px] text-center font-bold"
                 staggerFrom={"last"}
                 initial={{ y: "100%" }}
                 animate={{ y: 0 }}
