@@ -24,7 +24,7 @@ const App = () => {
          </a>
       </motion.div>
 
-      <button className=' text-white cursor-pointer text-[20px] font-medium border-[1px] py-2 px-5 z-[2312323000] border-[#ffffff56] bg-[#000000] rounded-md fixed right-12 bottom-12'>Get a code</button>
+      <button className=' text-white cursor-pointer text-[20px] font-medium border-[1px] py-2 px-5 z-[2312323000] border-[#ffffff56] bg-[#000000] rounded-md fixed right-12 bottom-12'>Get a Quote</button>
 
       <RouterProvider router={router} />
     </div>
