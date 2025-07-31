@@ -5,8 +5,8 @@ import services3 from '../../assets/services/services2.jpeg'
 import services4 from '../../assets/services/services3.jpg'
 import services5 from '../../assets/services/services4.jpg'
 import services6 from '../../assets/services/services5.jpg'
-import services7 from '../../assets/services/services6.jpeg'
-import services8 from '../../assets/services/services7.webp'
+import services7 from '../../assets/services/services6.jpg'
+import services8 from '../../assets/services/services7.jpg'
 import MetaTags from '../MetaTags';
 
 const Services = () => {
@@ -34,7 +34,7 @@ const Services = () => {
               Services By AppTex
           </h1>
           <p className="text-[14px] text-white md:text-[20px] font-[400]">
-           Our experts provide you with highly interactive and seamless UI/UX designs, scalable mobile applications, and robust websites that are highly functional and interactive at the same time. Beyond our IT services, our marketing Team provides you with next-gen marketing solutions to amplify your business. Whether it's SEO, PPC, ASO, or SMM, our digital marketing specialists craft data-driven strategies to ensure your brand not only attracts an audience but thrives in market competitive market. 
+      We deliver seamless UI/UX designs, scalable mobile apps, and robust websites. Our marketing team amplifies your business with data-driven strategies across SEO, PPC, ASO, and SMM, ensuring your brand thrives in a competitive market.
           </p>
         </div>
       </div>
