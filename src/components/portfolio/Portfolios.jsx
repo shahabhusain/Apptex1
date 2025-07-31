@@ -17,6 +17,7 @@ import img18logo from "../../assets/winner.png";
 import img19 from "../../assets/proj8.png";
 import img19logo from "../../assets/cheap.png";
 import { Link } from "react-router-dom";
+import MetaTags from "../MetaTags";
 
 
 const Portfolios = () => {
@@ -110,6 +111,7 @@ const Portfolios = () => {
   ]
   return (
     <div className="">
+      <MetaTags title="CheapSkate" description="CheapSkate for Campaigns is a cost-effective platform designed to help you create and manage impactful marketing campaigns on a tight budget." link="/cheap" image={img19logo} />
       {portfolioData.map((item) => (
         <div
           key={item.id}

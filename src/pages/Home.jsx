@@ -9,6 +9,7 @@ import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 import Trust from '../components/home/Trust';
 import Technology from '../components/home/Technology';
+import FrequentAskedQuestion from '../components/home/FrequentAskedQuestion';
 const Home = () => {
 
 
@@ -28,6 +29,7 @@ const Home = () => {
             <RealWorld />
             <Team />
              <Trust />
+             <FrequentAskedQuestion />
              <Build />
                <Footer />         
         </section>

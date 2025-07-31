@@ -11,6 +11,7 @@ import img7 from '../../assets/proj8.png';
 import img8 from '../../assets/proj9.png';
 import Beams from '../../../Reactbits/Beams/Beams';
 import { Link } from 'react-router-dom';
+import MetaTags from '../MetaTags';
 
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger);
@@ -123,13 +124,14 @@ const data = [
   return (
     <div className='relative w-full'>
       {/* Content container - in normal document flow */}
+      <MetaTags title="REAL-WORLD SUCCESS STORIES" description="Empowering SME's with cutting-edge IT Solutions and Market-driven Marketing, with seamless UI/UX designs." link="/cheap" image={img1} />
       <div className='relative z-10'>
         <div className='flex flex-col items-center justify-center my-20'>
           <h1 className="text-[44px] font-[400] text-white">
             REAL-WORLD <span className="font-[800]">SUCCESS STORIES</span>
           </h1>
           <p className="text-white mt-2 text-[16px] font-[400]">
-            How Our IT Solutions Helped Businesses Overcome Challenges and Achieve Growth
+           Empowering SME's with cutting-edge IT Solutions and Market-driven Marketing, with seamless UI/UX designs.
           </p>
         </div>
         

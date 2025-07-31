@@ -48,7 +48,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`fixed w-full z-50 transition-colors duration-300`}>
+    <header className={`fixed w-full z-[10000077777] transition-colors duration-300`}>
       <div className="flex w-[90%] mx-auto items-center justify-between py-4 px-6">
       <Link to="/"> <img className=' w-[200px]' src={logo} alt="" /></Link>
         {/* Desktop Menu Button - Always visible */}
@@ -96,7 +96,7 @@ const Header = () => {
                 onClick={() => setMenuOpen(false)}
                 className="px-10 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-blue-500 to-red-500 hover:from-blue-600 hover:to-red-600 text-xl transition-all"
               >
-                Contact Us
+                 Get a Quote
               </Link>
             </motion.div>
 
@@ -112,7 +112,7 @@ const Header = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </header>
   );
 };
 

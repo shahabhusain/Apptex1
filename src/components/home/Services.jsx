@@ -7,6 +7,7 @@ import services5 from '../../assets/services/services4.jpg'
 import services6 from '../../assets/services/services5.jpg'
 import services7 from '../../assets/services/services6.jpeg'
 import services8 from '../../assets/services/services7.webp'
+import MetaTags from '../MetaTags';
 
 const Services = () => {
   const [hoveredService, setHoveredService] = useState(null);
@@ -21,20 +22,19 @@ const Services = () => {
 
   return (
        <div>
+        <MetaTags title="Market Driven Services By AppTex" description="Our experts provide you with highly interactive and seamless UI/UX designs, scalable mobile applications, and robust websites that are highly functional and interactive at the same time. Beyond our IT services, our marketing Team provides you with next-gen marketing solutions to amplify your business. Whether it's SEO, PPC, ASO, or SMM, our digital marketing specialists craft data-driven strategies to ensure your brand not only attracts an audience but thrives in market competitive market." image={services1} />
          <div className=" mt-32 px-4 md:px-12 py-20 ">
       {/* Header */}
       <div className="flex flex-col md:flex-row gap-4 items-center text-center justify-center mt-6">
         <div className="md:w-[55%] flex flex-col gap-4 md:pl-6">
           <h1 className="text-3xl md:text-[54px] font-[900] text-white leading-tight">
             <span className="bg-gradient-to-l from-red-500 via-orange-500 to-pink-500 bg-clip-text text-transparent">
-              Services
+              Market Driven 
             </span>{" "}
-            We provide
+              Services By AppTex
           </h1>
           <p className="text-[14px] text-white md:text-[20px] font-[400]">
-            From UI/UX to cutting-edge Web and App solutions, we deliver
-            high-performance solutions, turning your ideas into innovative
-            digital experiences.
+           Our experts provide you with highly interactive and seamless UI/UX designs, scalable mobile applications, and robust websites that are highly functional and interactive at the same time. Beyond our IT services, our marketing Team provides you with next-gen marketing solutions to amplify your business. Whether it's SEO, PPC, ASO, or SMM, our digital marketing specialists craft data-driven strategies to ensure your brand not only attracts an audience but thrives in market competitive market. 
           </p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import val from '../../assets/val.png'
+import MetaTags from '../MetaTags'
 const Value = () => {
   const ValueData = [
     {
@@ -35,6 +36,7 @@ const Value = () => {
   ]
   return (
     <div className=' flex flex-col items-center justify-center gap-y-4 w-[90%] mx-auto mt-32'>
+      <MetaTags title="Growth & Adaptability" description="We continuously evolve, learn, and adapt to stay ahead in the ever-changing tech world." />
      <h1 className=' py-1 px-4 bg-[#4FAD2E1A] text-[#4FAD2E] text-[16px] w-fit font-[600]'>What We Stand For</h1>
      <h1 className='  text-[32px] font-[800] text-center text-white'>APPTEX <span className='bg-gradient-to-l from-orange-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent font-[800]'>Core Values</span></h1>
      <div className=' grid md:grid-cols-3 gap-2 grid-cols-1 mt-12'>

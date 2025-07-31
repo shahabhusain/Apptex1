@@ -7,6 +7,7 @@ import team4 from '../../assets/team5.png';
 import team5 from '../../assets/team6.png';
 import { FaLinkedin } from "react-icons/fa6";
 import ProfileCard from '../../../Reactbits/ProfileCard/ProfileCard';
+import MetaTags from '../MetaTags';
 
 const Team = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -74,6 +75,7 @@ const Team = () => {
 
   return (
     <div className='relative bg-[#1717179b] pb-6'>
+      <MetaTags title="Afaq Zahir" description="Ameer kakar is a thoughtful leader who brings clarity, purpose, and heart to everything he builds. With a deep understanding of people and a passion for meaningful innovation, he guides the team with vision and quiet confidence." link="https://www.linkedin.com/in/afaqxdev" image={team}/>
       {/* Content container */}
       <div className="flex items-center mt-32 relative z-10">
         <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">

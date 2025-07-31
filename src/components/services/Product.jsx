@@ -9,6 +9,7 @@ import img6 from '../../assets/icon/img6.png';
 import img7 from '../../assets/icon/img7.png';
 import img8 from '../../assets/icon/img8.png';
 import img9 from '../../assets/icon/img9.png';
+import MetaTags from '../MetaTags';
 
 const Product = () => {
   const ValueData = [
@@ -48,6 +49,7 @@ const Product = () => {
 
   return (
     <div className='flex flex-col items-center justify-center gap-y-4 w-[90%] bg-[#1717179b] md:p-12 p-4  mx-auto my-20 rounded-2xl'>
+      <MetaTags title="UI/UX Designing" description="At Apptex, we create engaging, and functional UI/UX designs that enhance user experience and drive business growth. From user research to interactive prototypes, we blend creativity with data-driven insights to craft responsive, user-friendly designs." image={val} />
       <h1 className='text-[32px] font-[800] text-center text-white'>
         Services{' '}
         <span className='bg-gradient-to-l from-orange-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent font-[800]'>
@@ -72,7 +74,7 @@ const Product = () => {
 
       {/* Infinite Vertical Scroll */}
       <div className='relative overflow-hidden mt-12'>
-        <div className='flex  items-center gap-6 md:w-[600px] w-[200px] animate-scroll'>
+        <div className='flex  items-center gap-6 md:w-[1200px] w-[200px] animate-scroll'>
           {Technology.concat(Technology).map((item, index) => (
             <img key={index} className='w-[100px]' src={item.img} alt='' />
           ))}

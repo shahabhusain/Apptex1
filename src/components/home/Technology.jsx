@@ -8,7 +8,10 @@ import img6 from '../../assets/icon/img6.png';
 import img7 from '../../assets/icon/img7.png';
 import img8 from '../../assets/icon/img8.png';
 import img9 from '../../assets/icon/img9.png';
+import MetaTags from '../MetaTags';
 const Technology = () => {
+
+
      const Technology = [
     { img: img1 },
     { img: img2 },
@@ -22,8 +25,9 @@ const Technology = () => {
   ];
   return (
     <div className=' w-[90%] mx-auto flex flex-col items-center justify-center'>
+        <MetaTags title="Tech Stack We Command" image={img1} />
           <h1 className='bg-gradient-to-l md:text-start from-orange-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent text-[42px] text-center font-[700] mt-20'>
-        Technologies We Specialize In!
+       Tech Stack We Command
       </h1>
 
       {/* Infinite Vertical Scroll */}

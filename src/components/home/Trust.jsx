@@ -9,10 +9,10 @@ import img5 from "../../assets/icon/winner.png";
 import img6 from "../../assets/icon/ask.png";
 import img7 from "../../assets/icon/muala.png";
 import img8 from "../../assets/icon/local.png";
+import MetaTags from "../MetaTags";
 
 const Trust = () => {
   const marqueeRef = useRef(null);
-
   const Technology = [
     { img: img1, title: "Skiwit" },
     { img: img2, title: "Omni" },
@@ -48,6 +48,7 @@ const Trust = () => {
 
   return (
     <div className="w-[80%] border border-[#ffffff2e] bg-[#3f3e3e9b] py-12 mx-auto mt-12 overflow-hidden">
+          <MetaTags title="Trusted by Leading Brands" image={img1} />
       <h1 className="uppercase text-[50px] font-bold text-white text-center">
         Trusted by Leading Brands
       </h1>
