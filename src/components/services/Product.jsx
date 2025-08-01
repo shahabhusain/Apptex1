@@ -50,7 +50,7 @@ const Product = () => {
   return (
     <div className='flex flex-col items-center justify-center gap-y-4 w-[90%] bg-[#1717179b] md:p-12 p-4  mx-auto my-20 rounded-2xl'>
       <MetaTags title="UI/UX Designing" description="At Apptex, we create engaging, and functional UI/UX designs that enhance user experience and drive business growth. From user research to interactive prototypes, we blend creativity with data-driven insights to craft responsive, user-friendly designs." image={val} />
-      <h1 className='text-[32px] font-[800] text-center text-white'>
+      <h1 className='md:text-[32px] text-[25px] font-[800] text-center text-white'>
         Services{' '}
         <span className='bg-gradient-to-l from-orange-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent font-[800]'>
           We Deliver
@@ -61,8 +61,8 @@ const Product = () => {
           <div key={index} className='border-[1px] border-[#2e2c2c] p-3 rounded-md'>
             <div className='bg-[#1717179b] p-12 flex flex-col gap-2'>
               <img className='w-[50px]' src={item.img} alt='' />
-              <h1 className='text-[24px] font-[700] text-[#ffffff]'>{item.title}</h1>
-              <p className='text-[#ffffff] text-[16px] font-[400]'>{item.description}</p>
+              <h1 className='md:text-[24px] text-[20px] font-[700] text-[#ffffff]'>{item.title}</h1>
+              <p className='text-[#ffffff] md:text-[16px] text-[14px] font-[400]'>{item.description}</p>
             </div>
           </div>
         ))}

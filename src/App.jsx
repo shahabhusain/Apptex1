@@ -15,7 +15,7 @@ const App = () => {
         initial={{ top: 12 }}
         animate={{ top: 'calc(100% - 6rem)' }} // 3rem = bottom-12
         transition={{ duration: 1.5, ease: 'easeOut' }}
-        className='fixed left-12 w-[80px] z-[1000] cursor-pointer'
+        className='fixed left-12 md:w-[80px] w-[50px] z-[1000] cursor-pointer'
         style={{ position: 'fixed' }}
       >
          <a href="https://wa.me/923161964761" target='_blank'>
@@ -24,7 +24,7 @@ const App = () => {
          </a>
       </motion.div>
 
-      <button className=' text-white cursor-pointer text-[20px] font-medium border-[1px] py-2 px-5 z-[2312323000] border-[#ffffff56] bg-[#000000] rounded-md fixed right-12 bottom-12'>Get a Quote</button>
+      <button className=' text-white cursor-pointer md:text-[20px] text-[14px] font-medium border-[1px] py-1 px-3 md:py-2 md:px-5 z-[2312323000] border-[#ffffff56] bg-[#000000] rounded-md fixed right-12 md:bottom-12 bottom-16'>Get a Quote</button>
 
       <RouterProvider router={router} />
     </div>

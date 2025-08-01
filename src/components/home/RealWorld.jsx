@@ -122,59 +122,59 @@ const data = [
   };
 
   return (
-    <div className='relative w-full'>
-      {/* Content container - in normal document flow */}
+<div className='relative w-full'>
       <MetaTags title="REAL-WORLD SUCCESS STORIES" description="Empowering SME's with cutting-edge IT Solutions and Market-driven Marketing, with seamless UI/UX designs." link="/cheap" image={img1} />
       <div className='relative z-10'>
         <div className='flex flex-col items-center justify-center my-20'>
-          <h1 className="text-[44px] font-[400] text-white">
+          <h1 className="md:text-[44px] text-[30px] text-center font-[400] text-white">
             REAL-WORLD <span className="font-[800]">SUCCESS STORIES</span>
           </h1>
-          <p className="text-white mt-2 text-[16px] font-[400]">
-           Empowering SME's with cutting-edge IT Solutions and Market-driven Marketing, with seamless UI/UX designs.
+          <p className="text-white mt-2 md:text-[16px] text-[14px] text-center font-[400]">
+            Empowering SME's with cutting-edge IT Solutions and Market-driven Marketing, with seamless UI/UX designs.
           </p>
         </div>
-        
-        {/* Horizontal scroll section */}
-        <div 
-          ref={horizontalWrapperRef}
-          className="relative w-full h-[700px] overflow-hidden"
-        >
-          <div 
-            ref={horizontalContainerRef}
-            className="absolute h-full flex will-change-transform"
-          >
+
+        <div ref={horizontalWrapperRef} className="relative w-full md:h-[700px] h-[600px] overflow-hidden">
+          <div ref={horizontalContainerRef} className="absolute h-full flex will-change-transform">
             {data.map((item, i) => (
               <div
                 key={i}
                 ref={addToPanelsRef}
-                className="panel group relative w-[400px] h-full shrink-0 overflow-hidden cursor-pointer border-[2px] border-[#b0acac2a] bg-[#fff] hover:shadow-xl transition-all duration-500"
+                className="panel group relative w-[400px] h-full shrink-0 overflow-hidden cursor-pointer border-[2px] border-[#b0acac2a] bg-white hover:shadow-xl transition-all duration-500"
               >
                 <div className="absolute inset-0 overflow-hidden">
-                  <div style={{backgroundImage:item.bgColor}} className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div
+                    style={{ backgroundImage: item.bgColor }}
+                    className="absolute inset-0 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500"
+                  ></div>
                 </div>
 
-                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-10">
-                  <h2 className="text-[28px] font-bold text-black tracking-tight">{item.title}</h2>
-                  <p className="text-[18px] text-black text-center">{item.application}</p>
-                  <div className="absolute bottom-8 w-10 h-1 bg-black rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center transition-all duration-500 md:group-hover:opacity-0 md:group-hover:-translate-y-10">
+                  <h2 className="md:text-[28px] text-[1px] font-bold text-black tracking-tight">{item.title}</h2>
+                  <p className="md:text-[18px] text-[1px] text-black text-center">{item.application}</p>
+                  <div className="absolute bottom-8 w-10 h-1 bg-black rounded-full scale-100 md:scale-0 md:group-hover:scale-100 transition-transform duration-300"></div>
                 </div>
 
-                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-6 text-white opacity-0 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.33,1,0.68,1)]">
-                  <div className="mb-4 w-12 h-1 bg-white rounded-full scale-0 group-hover:scale-100 transition-transform delay-100 duration-500"></div>
-                  <h1 className="text-[30px] font-extrabold tracking-tight mb-2 text-center">{item.title1}</h1>
-                  <p className="text-[18px] text-center text-gray-300">{item.application}</p>
-                  <Link to={item.path} className="mt-6 px-6 py-2 bg-white text-black rounded-full font-medium opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all delay-150 duration-500 hover:bg-gray-100">
+                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-6 text-white opacity-100 translate-y-0 md:opacity-0 md:translate-y-8 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.33,1,0.68,1)]">
+                  <div className="mb-4 w-12 h-1 bg-white rounded-full scale-100 md:scale-0 md:group-hover:scale-100 transition-transform delay-100 duration-500"></div>
+                  <h1 className="md:text-[30px] text-[20px] font-extrabold tracking-tight mb-2 text-center">{item.title1}</h1>
+                  <p className="md:text-[18px] text-[15px] text-center text-gray-300">{item.application}</p>
+                  <Link to={item.path} className="mt-6 px-6 py-2 bg-white text-black rounded-full font-medium opacity-100 translate-y-0 md:opacity-0 md:group-hover:opacity-100 md:translate-y-4 md:group-hover:translate-y-0 transition-all delay-150 duration-500 hover:bg-gray-100">
                     View Project
                   </Link>
-                  <img className='mt-6 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all delay-150 duration-500' src={item.img} alt="" />
+                  <img
+                    className="mt-6 opacity-100 translate-y-0 md:opacity-0 md:group-hover:opacity-100 md:translate-y-4 md:group-hover:translate-y-0 transition-all delay-150 duration-500"
+                    src={item.img}
+                    alt=""
+                  />
                 </div>
               </div>
             ))}
+
             <div className='border-[2px] w-[400px] border-[#b0acac2a] px-3 flex flex-col items-center justify-center'>
               <h1 className=' text-white text-center text-[30px] font-medium'>This Could Be Your Success Story</h1>
               <p className=' text-white text-[14px] font-normal text-center'>We've helped others innovate and grow—now it’s your turn to be in the spotlight.</p>
-               <Link className=' bg-white text-black rounded-md py-2 px-5 text-[16px] font-normal mt-4' to="/contact">Contact Us</Link>
+              <Link className=' bg-white text-black rounded-md py-2 px-5 text-[16px] font-normal mt-4' to="/contact">Contact Us</Link>
             </div>
           </div>
         </div>

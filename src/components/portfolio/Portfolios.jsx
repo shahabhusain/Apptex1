@@ -144,7 +144,7 @@ const Portfolios = () => {
             <p className="text-[#ffffff] 2xl:text-[16px] text-[14px] font-normal">
               {item.desc}
             </p>
-            <Link to={item.Link} className="border-[2px] mt-6 border-[#d781ef] w-fit text-white text-[16px] font-[600] py-2 px-4 rounded-full flex items-center">
+            <Link to={item.Link} className="border-[2px] md:mt-6 mt-3 border-[#d781ef] w-fit text-white text-[16px] font-[600] py-2 px-4 rounded-full flex items-center">
               View Case Study
               <div className="bg-white text-white rounded-full h-5 w-5 flex items-center justify-center ml-2">
                 <img className="" src={arrow} alt="" />
@@ -152,7 +152,7 @@ const Portfolios = () => {
             </Link>
           </div>
           <img
-            className="md:w-[444px] 2xl:w-[555px] rounded-[20px]"
+            className="md:w-[444px] 2xl:w-[555px] md:mt-0 mt-4 rounded-[20px]"
             src={item.imgUrl}
             alt=""
           />

@@ -26,13 +26,13 @@ const Technology = () => {
   return (
     <div className=' w-[90%] mx-auto flex flex-col items-center justify-center'>
         <MetaTags title="Tech Stack We Command" image={img1} />
-          <h1 className='bg-gradient-to-l md:text-start from-orange-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent text-[42px] text-center font-[700] mt-20'>
+          <h1 className='bg-gradient-to-l md:text-start from-orange-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent md:text-[42px] text-[27px] text-center font-[700] mt-20'>
        Tech Stack We Command
       </h1>
 
       {/* Infinite Vertical Scroll */}
-      <div className='relative overflow-hidden mt-12'>
-        <div className='flex  items-center gap-6 md:w-[1200px] w-[200px] animate-scroll'>
+      <div className='relative overflow-hidden md:mt-12 mt-6'>
+        <div className='flex  items-center gap-6 md:w-[1200px] w-[300px] animate-scroll'>
           {Technology.concat(Technology).map((item, index) => (
             <img key={index} className='w-[100px]' src={item.img} alt='' />
           ))}
@@ -45,7 +45,7 @@ const Technology = () => {
           100% { transform: translateX(-50%); }
         }
         .animate-scroll {
-          animation: scroll 8s linear infinite;
+          animation: scroll 5s linear infinite;
         }
         `}
       </style>

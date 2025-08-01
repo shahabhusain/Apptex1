@@ -47,9 +47,9 @@ const Trust = () => {
   }, []);
 
   return (
-    <div className="w-[80%] border border-[#ffffff2e] bg-[#3f3e3e9b] py-12 mx-auto mt-12 overflow-hidden">
+    <div className="md:w-[80%] w-[95%] border border-[#ffffff2e] bg-[#3f3e3e9b] py-12 mx-auto mt-12 overflow-hidden">
           <MetaTags title="Trusted by Leading Brands" image={img1} />
-      <h1 className="uppercase text-[50px] font-bold text-white text-center">
+      <h1 className="uppercase md:text-[50px] text-[30px] font-bold text-white text-center">
         Trusted by Leading Brands
       </h1>
       <div className="relative overflow-hidden mt-6">

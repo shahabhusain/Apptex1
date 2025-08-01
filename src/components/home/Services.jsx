@@ -23,7 +23,7 @@ const Services = () => {
   return (
        <div>
         <MetaTags title="Market Driven Services By AppTex" description="Our experts provide you with highly interactive and seamless UI/UX designs, scalable mobile applications, and robust websites that are highly functional and interactive at the same time. Beyond our IT services, our marketing Team provides you with next-gen marketing solutions to amplify your business. Whether it's SEO, PPC, ASO, or SMM, our digital marketing specialists craft data-driven strategies to ensure your brand not only attracts an audience but thrives in market competitive market." image={services1} />
-         <div className=" mt-32 px-4 md:px-12 py-20 ">
+         <div className=" md:mt-32 mt-12 px-4 md:px-12 md:py-20 ">
       {/* Header */}
       <div className="flex flex-col md:flex-row gap-4 items-center text-center justify-center mt-6">
         <div className="md:w-[55%] flex flex-col gap-4 md:pl-6">
@@ -46,7 +46,7 @@ const Services = () => {
         <h1
           onMouseEnter={() => handleMouseEnter('uiux')}
           onMouseLeave={handleMouseLeave}
-          className="text-[46px] cursor-pointer font-[700] relative w-full transition-all duration-300"
+          className="md:text-[46px] text-[24px] cursor-pointer font-[700] relative w-full transition-all duration-300"
           style={{
             color: hoveredService === 'uiux' ? 'white' : 'transparent',
             WebkitTextStroke: '2px white',
@@ -76,7 +76,7 @@ const Services = () => {
         <h1
           onMouseEnter={() => handleMouseEnter('web')}
           onMouseLeave={handleMouseLeave}
-          className="text-[46px] cursor-pointer font-[700] relative w-full transition-all duration-300"
+          className="md:text-[46px] text-[24px] cursor-pointer font-[700] relative w-full transition-all duration-300"
           style={{
             color: hoveredService === 'web' ? 'white' : 'transparent',
             WebkitTextStroke: '2px white',
@@ -106,7 +106,7 @@ const Services = () => {
         <h1
           onMouseEnter={() => handleMouseEnter('app')}
           onMouseLeave={handleMouseLeave}
-          className="text-[46px] cursor-pointer font-[700] relative w-full transition-all duration-300"
+          className="md:text-[46px] text-[24px] cursor-pointer font-[700] relative w-full transition-all duration-300"
           style={{
             color: hoveredService === 'app' ? 'white' : 'transparent',
             WebkitTextStroke: '2px white',
@@ -136,7 +136,7 @@ const Services = () => {
         <h1
           onMouseEnter={() => handleMouseEnter('seo')}
           onMouseLeave={handleMouseLeave}
-          className="text-[46px] cursor-pointer font-[700] relative w-full transition-all duration-300"
+          className="md:text-[46px] text-[24px] cursor-pointer font-[700] relative w-full transition-all duration-300"
           style={{
             color: hoveredService === 'seo' ? 'white' : 'transparent',
             WebkitTextStroke: '2px white',

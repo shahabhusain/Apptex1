@@ -24,13 +24,14 @@ const Hero = () => {
       </div>
 
       {/* Hero Content */}
-      <h1 className="text-[48px] md:text-[120px] text-center font-bold leading-[1.1] md:leading-[1]">
+        <div>
+           <h1 className="text-[48px] md:text-[120px] text-center font-bold leading-[1.1] md:leading-[1]">
         <span className="font-normal block">We help</span>
         <span className='mt-4 flex justify-center'>
           <div className='w-full flex items-center justify-center'>
             <RotatingText
-              texts={['Build', 'Scale', 'Accelerate', 'Transform']}
-              mainClassName="text-white bg-pink-500 text-center p-5 rounded-md md:w-[800px] text-center font-bold"
+              texts={['Build', 'Design', 'Optimize', 'Grow']}
+              mainClassName="text-white bg-pink-500 text-center p-5 rounded-md  text-center font-bold"
               staggerFrom={"last"}
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
@@ -42,12 +43,13 @@ const Hero = () => {
             />
           </div>
         </span>
-        <span className="font-normal block">digital solutions.</span>
+        <span className="font-normal block whitespace-nowrap">Digital Solutions.</span>
       </h1>
 
       <p className="text-[#949494] text-center text-[18px] md:text-[20px] font-medium mt-6 md:mt-8 max-w-[800px]">
         Custom Mobile Apps • Responsive Websites • Growth-Driven Marketing
       </p>
+        </div>
     </div>
   );
 };

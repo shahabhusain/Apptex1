@@ -37,8 +37,8 @@ const FrequentAskedQuestion = () => {
   ];
 
   return (
-    <div className="w-[80%] mx-auto px-4 py-8">
-      <h2 className="text-[40px] font-bold text-center mb-8 text-white">Frequently Asked Questions</h2>
+    <div className="md:w-[80%] w-[95%] mx-auto px-4 py-8">
+      <h2 className="md:text-[40px] text-[30px] font-bold text-center mb-8 text-white">Frequently Asked Questions</h2>
       <MetaTags title="What makes AppTex the best choice for UI/UX design in Florida?" description="AppTex offers Florida businesses intuitive and user-friendly UI/UX designs that drive conversions. Our Florida-focused designs are tailored to enhance customer satisfaction and meet local user expectations." />
       <div className="space-y-4">
         {faqs.map((faq, index) => (
