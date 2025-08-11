@@ -5,6 +5,7 @@ import team2 from '../../assets/team3.png';
 import team3 from '../../assets/team4.png';
 import team4 from '../../assets/team5.png';
 import team5 from '../../assets/team6.png';
+import team6 from '../../assets/team7.png';
 import { FaLinkedin } from "react-icons/fa6";
 import ProfileCard from '../../../Reactbits/ProfileCard/ProfileCard';
 import MetaTags from '../MetaTags';
@@ -62,6 +63,15 @@ const Team = () => {
       desc: "A problem solver at heart, Afaq Zahir builds fast, scalable mobile apps with precision and care. Their work blends technical depth with a seamless user experience.",
       link: "https://www.linkedin.com/in/afaqxdev"
     },
+
+       {
+      title: "Empowering Your Success With Expert Digital Marketing Strategies",
+      name: "Emran Ullah Khan",
+      position: "Digital Marketing Specialist",
+      image: team6,
+      desc: "With 4+ years of experience, I specialize in Meta Ads, full-stack SEO, and strategic digital marketing. I’ve led expert teams, completed 30+ US-based projects, 20+ UK projects, 10+ KSA/Gulf projects, and 100+ Pakistani projects across real estate, Lifestyle, health, software, education, and e-commerce. Currently, I manage 4+ US and 2+ Pakistani e-commerce projects, driving measurable growth through innovative strategies.",
+      link: "https://www.linkedin.com/in/emranullah-khan-28063b146/"
+    },
    
   ];
 
@@ -96,6 +106,7 @@ const Team = () => {
           {/* Right Column - Profile Card */}
           <div className="flex flex-col items-center justify-center p-4">
             <ProfileCard
+             className=''
               name={false}
               title={false}
               handle={teamMembers[currentSlide].position.toLowerCase().replace(/\s+/g, '')}

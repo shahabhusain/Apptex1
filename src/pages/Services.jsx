@@ -24,8 +24,6 @@ const Services = () => {
       <Header />
          <Title />
         <Product />
-        {/* <Trusted />
-        <Deliver /> */}
         <Build />
         <Footer />
         </div> 
